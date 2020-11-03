@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "d326eab5-ef91-4d1e-a6aa-1f99e6249c6e",
+		"name": "movie-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Get] Movie Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{node_base_url}}/detail?id=tt6565702",
+					"host": [
+						"{{node_base_url}}"
+					],
+					"path": [
+						"detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "tt6565702"
+						}
+					]
+				},
+				"description": "get movie detail based on id omdb"
+			},
+			"response": []
+		},
+		{
+			"name": "[Get] Search Movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{node_base_url}}/search?keyword=dark+phoenix",
+					"host": [
+						"{{node_base_url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "dark+phoenix"
+						}
+					]
+				},
+				"description": "Search movies based on keyword"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
