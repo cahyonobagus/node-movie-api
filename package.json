@@ -1,0 +1,22 @@
+{
+  "name": "movie-api",
+  "version": "1.0.0",
+  "description": "Node Movie API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --detectOpenHandles --runInBand",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "author": "Bagus B. Cahyono",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "jest": "^26.6.2"
+  }
+}
